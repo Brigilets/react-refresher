@@ -1,0 +1,57 @@
+import Table from "./Table";
+import useSort from "../hooks/use-sort";
+
+import { GoArrowSmallUp, GoArrowSmallDown } from "react-icons/go";
+
+const SortableTable = (props) => {
+  const { config, data } = props;
+
+  const { sortedData, setSortColumn, sortOrder, sortBy } = useSort(
+    data,
+    config
+  );
+
+  const updatedConfig = config.map((column) => {
+    if (!column.sortValue) {
+      return column;
+    }
+    return {
+      ...column,
+      header: () => (
+        <th
+          className="corsor-pointer hover:bg-gray-100"
+          onClick={() => setSortColumn(column.label)}
+        >
+          <div className="flex items-center">
+            {getIcons(column.label, sortBy, sortOrder)} {column.label}
+          </div>
+        </th>
+      ),
+    };
+  });
+
+  return <Table {...props} data={sortedData} config={updatedConfig} />;
+};
+function getIcons(label, sortBy, sortOrder) {
+  if (label !== sortBy) {
+    return (
+      <div>
+        <GoArrowSmallUp />
+        <GoArrowSmallDown />
+      </div>
+    );
+  }
+  if (sortOrder === "asc") {
+    return (
+      <div>
+        <GoArrowSmallUp />
+      </div>
+    );
+  }
+  return (
+    <div>
+      <GoArrowSmallDown />
+    </div>
+  );
+}
+export default SortableTable;

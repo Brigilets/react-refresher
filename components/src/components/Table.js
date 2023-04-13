@@ -41,12 +41,7 @@ const Table = ({ data, config, keyFn }) => {
   return (
     <table className="table-auto border-spacing-2">
       <thead>
-        <tr className="border-b-2">
-          {rendredHeaders}
-          {/* <th>Fruit</th>
-          <th>Color</th>
-          <th>Score</th> */}
-        </tr>
+        <tr className="border-b-2">{rendredHeaders}</tr>
       </thead>
 
       <tbody>{rendredRows}</tbody>
