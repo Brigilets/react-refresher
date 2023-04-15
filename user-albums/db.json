@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "name": "Elsie Cremin",
+      "id": 1
+    },
+    {
+      "name": "Keith Rolfson",
+      "id": 2
+    },
+    {
+      "name": "Florence Glover",
+      "id": 3
+    }
+  ],
+  "albums": [
+    {
+      "userId": 2,
+      "title": "Electronic Cotton Pizza",
+      "id": 14
+    },
+    {
+      "userId": 3,
+      "title": "Sleek Steel Hat",
+      "id": 16
+    },
+    {
+      "userId": 3,
+      "title": "Luxurious Plastic Computer",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "title": "Fantastic Soft Cheese",
+      "id": 18
+    },
+    {
+      "userId": 2,
+      "title": "Incredible Concrete Keyboard",
+      "id": 20
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 20,
+      "url": "https://loremflickr.com/150/150/abstract?lock=86643",
+      "id": 2
+    },
+    {
+      "albumId": 20,
+      "url": "https://loremflickr.com/150/150/abstract?lock=21172",
+      "id": 3
+    },
+    {
+      "albumId": 20,
+      "url": "https://loremflickr.com/150/150/abstract?lock=69215",
+      "id": 4
+    },
+    {
+      "albumId": 18,
+      "url": "https://loremflickr.com/150/150/abstract?lock=48813",
+      "id": 6
+    },
+    {
+      "albumId": 18,
+      "url": "https://loremflickr.com/150/150/abstract?lock=18864",
+      "id": 7
+    },
+    {
+      "albumId": 14,
+      "url": "https://loremflickr.com/150/150/abstract?lock=6660",
+      "id": 8
+    },
+    {
+      "albumId": 20,
+      "url": "https://loremflickr.com/150/150/abstract?lock=84543",
+      "id": 9
+    },
+    {
+      "albumId": 16,
+      "url": "https://loremflickr.com/150/150/abstract?lock=50904",
+      "id": 11
+    },
+    {
+      "albumId": 16,
+      "url": "https://loremflickr.com/150/150/abstract?lock=35841",
+      "id": 12
+    },
+    {
+      "albumId": 16,
+      "url": "https://loremflickr.com/150/150/abstract?lock=41445",
+      "id": 13
+    },
+    {
+      "albumId": 17,
+      "url": "https://loremflickr.com/150/150/abstract?lock=64409",
+      "id": 14
+    },
+    {
+      "albumId": 17,
+      "url": "https://loremflickr.com/150/150/abstract?lock=8044",
+      "id": 15
+    },
+    {
+      "albumId": 18,
+      "url": "https://loremflickr.com/150/150/abstract?lock=41441",
+      "id": 16
+    }
+  ]
+}
